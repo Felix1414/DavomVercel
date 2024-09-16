@@ -4,8 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAVOM IA</title>
-    <!-- Enlace al archivo CSS de chat-interface.tsx -->
-    <link rel="stylesheet" href="path/to/chat-interface.css"> <!-- Ajusta la ruta según corresponda -->
+    <style>
+        /* Agrega aquí los estilos de chat-interface.tsx */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .conversacion-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .conversacion {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        .mensaje {
+            margin-bottom: 10px;
+        }
+
+        .mensaje.pregunta {
+            color: blue;
+        }
+
+        .mensaje.respuesta {
+            color: green;
+        }
+
+        .cargando {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .input-container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .input-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .input-container button {
+            padding: 10px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .input-container button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,7 +126,7 @@
                         <a href="#" aria-haspopup="true" aria-expanded="false">Manual</a>
                         <ul class="dropdown-content">
                             <li><a href="coiler.html">Coiler</a></li>
-                            <li><a href="ensambladora">Ensambladora</a></li>
+                            <li><a href="ensambladora.html">Ensambladora</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -97,4 +207,3 @@
 </body>
 </html>
 
-}
