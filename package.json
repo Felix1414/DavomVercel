@@ -5,14 +5,14 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1" // Asegúrate de usar la versión adecuada
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-react-hooks": "^4.0.0",
-    "eslint-plugin-jest": "^27.0.0" // Solo si usas Jest
+    "eslint-plugin-jest": "^27.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  }
+}
+
   }
 }
